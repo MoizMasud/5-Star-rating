@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(to left, red, blue);
+}
+
+body label {
+    color: white;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stars.disabled {
+    pointer-events: none;
+}
+
+.stars a {
+    color: white;
+    font-size: 5rem;
+    opacity: 50%; /* makes them greyed out */
+    cursor: pointer;
+    padding: 10px;
+}
+.stars:hover a {
+    opacity: 100%;
+}
+
+.stars a:hover ~ a{ /* get all the a tags after the one u hovered over, and make it 50% */
+    opacity: 50%;
+}
+
+.stars a.active { 
+    opacity: 100%;
+}
