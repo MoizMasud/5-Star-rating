@@ -18,7 +18,7 @@ body label {
 }
 
 .stars.disabled {
-    pointer-events: none;
+    pointer-events: none;/* makes it so u can't click the rest of the stars */
 }
 
 .stars a {
